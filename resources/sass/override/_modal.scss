@@ -1,0 +1,53 @@
+.modal-header,
+.modal-body {
+  padding: 15px 30px 15px 30px;
+}
+
+.modal-body {
+  padding-top: 15px;
+}
+
+.modal-footer {
+    padding: 10px 25px 10px 25px;
+}
+
+.modal-header {
+  border-top: 5px solid #39af21;
+  border-bottom: 1px solid #d0ffc6;
+  margin-bottom: 0px;
+  h5 {
+    font-size: 18px;
+  }
+}
+
+.modal-footer {
+  border-top: 1px solid #d0ffc6;
+  border-radius: 0 0 3px 3px;
+}
+
+.modal-content {
+  max-width: 100%;
+  border: none;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .05);
+}
+
+.modal.show {
+	.modal-content {
+	  box-shadow: 0 4px 15px rgba(0, 0, 0, .2);
+	}
+}
+
+.modal-progress {
+  .modal-content {
+    position: relative;
+    &:after {
+      @include overlay(999);
+      @include background_spinner;
+      border-radius: 3px;
+    }
+  }
+}
+
+.modal-part {
+  display: none;
+}

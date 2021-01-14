@@ -1,0 +1,1 @@
+php artisan serve --host=10.122.121.104 --port=8080

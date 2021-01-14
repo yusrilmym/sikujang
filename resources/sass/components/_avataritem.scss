@@ -1,0 +1,20 @@
+.avatar-item {
+  position: relative;
+  margin-bottom: 55px;
+  img {
+    border-radius: 5%;
+  }
+  .avatar-badge {
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    background-color: #fff;
+    color: #000;
+    @include shadow;
+    border-radius: 5%;
+    text-align: center;
+    line-height: 25px;
+    width: 25px;
+    height: 25px;
+  }
+}

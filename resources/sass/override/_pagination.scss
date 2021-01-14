@@ -1,0 +1,31 @@
+.page-item {
+  .page-link {
+    color: color(success);
+    border-radius: 3px;
+    margin: 0 3px;
+  }
+  &.active .page-link {
+    background-color: color(success);
+    border-color: color(success);
+  }
+  &.disabled .page-link {
+    border-color: transparent;
+    background-color: color_lighten(success, 31.7%);
+    color: color(success);
+    opacity: .6;
+  }
+}
+
+.page-link {
+  border-color: transparent;
+  background-color: color_lighten(success, 31.7%);
+  font-weight: 600;
+  &:hover {
+    background-color: color(success);
+    color: #fff;
+    border-color: transparent;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+}

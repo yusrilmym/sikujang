@@ -1,0 +1,326 @@
+/**
+ * Stisla
+ *
+ * Stisla is a clean & modern HTML5 admin template based on Bootstrap 4.
+ * Stisla will make it easier for you to create your own admin interface.
+ *
+ * @package	Stisla
+ * @version	2.3.0
+ * @author 	Muhamad Nauval Azhar
+ * @url 	https://getstisla.com
+ *
+ */
+
+// @import "~bootstrap";
+@import '~bootstrap/scss/bootstrap';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import 'functions';
+
+@import '~bootstrap-vue/src/index.scss';
+@import '~jquery.scrollbar/sass/jquery.scrollbar.scss';
+@import '~select2/dist/css/select2.css';
+//kayanya mantep
+@import '~vue-multiselect/dist/vue-multiselect.min.css';
+@import '~@riophae/vue-treeselect/dist/vue-treeselect.css';
+// @import '~vue-search-select/dist/VueSearchSelect.css';
+//vuetify
+@import '~vuetify/dist/vuetify.css';
+@import '~@mdi/font/css/materialdesignicons.min.css';
+// @import '~vuetify/src/styles/generic/_index.scss';
+// @import '~vuetify/src/styles/main.sass';
+
+
+
+//table header fixed
+.tableFixHead          { overflow-y: auto !important; height: 150px !important; }
+.tableFixHead thead th { position: -webkit-sticky; position: sticky !important; top: 0 !important; background-color: #39af21 !important; z-index:1 !important; color: white !important;}
+
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * 1. Variable
+ * 2. Mixin
+ * 3. Bootstrap Override
+ * 	  3.1 Misc
+ * 	  3.2 Form
+ * 	  3.3 List
+ * 	  3.4 Alert
+ * 	  3.5 Card
+ * 	  3.6 Table
+ * 	  3.7 Tooltip
+ * 	  3.8 Modal
+ * 	  3.9 Nav
+ * 	  3.10 Pagination
+ * 	  3.11 Badge
+ * 	  3.12 Button
+ * 	  3.13 Media
+ * 	  3.14 Breadcrumb
+ * 	  3.15 Accordion
+ * 	  3.16 Popover
+ * 	  3.17 Grid
+ * 	  3.18 Navbar
+ * 	  3.19 Dropdown
+ * 	  3.20 Tab
+ * 	  3.21 Progressbar
+ * 	  3.22 Jumbotron
+ * 	  3.23 Carousel
+ * 4. Theme Style
+ * 	  4.1 Misc
+ * 	  4.2 Section
+ * 	  4.3 Page
+ * 	  4.4 Layout
+ * 	  4.5 Animation
+ * 5. Responsive
+ *
+ */
+
+/* 1. Variable */
+@import "variable";
+@import "font";
+
+/* 2. Mixin */
+@import "mixin";
+
+/* 3. Bootstrap Override */
+/* 3.1 Misc */
+@import "override/misc";
+/* 3.2 Form */
+@import "override/form";
+/* 3.3 List */
+@import "override/list";
+/* 3.4 Alert */
+@import "override/alert";
+/* 3.5 Card */
+@import "override/card";
+/* 3.6 Table */
+@import "override/table";
+/* 3.7 Tooltip */
+@import "override/tooltip";
+/* 3.8 Modal */
+@import "override/modal";
+/* 3.9 Nav */
+@import "override/nav";
+/* 3.10 Pagination */
+@import "override/pagination";
+/* 3.11 Badge */
+@import "override/badge";
+/* 3.12 Button */
+@import "override/button";
+/* 3.13 Media */
+@import "override/media";
+/* 3.14 Breadcrumb */
+@import "override/breadcrumb";
+/* 3.15 Accordion */
+@import "override/accordion";
+/* 3.16 Popover */
+@import "override/popover";
+/* 3.17 Grid */
+@import "override/grid";
+/* 3.18 Navbar */
+@import "override/navbar";
+/* 3.19 Dropdown */
+@import "override/dropdown";
+/* 3.20 Dropdown */
+@import "override/tab";
+/* 3.21 Progress Bar */
+@import "override/progressbar";
+/* 3.22 Jumbotron */
+@import "override/jumbotron";
+/* 3.23 Carousel */
+@import "override/carousel";
+
+@import "components";
+
+/* 4. Theme Style */
+/* 4.1 Misc */
+@import "theme/misc";
+/* 4.2 Section */
+@import "theme/section";
+/* 4.3 Page */
+@import "theme/page";
+/* 4.4 Layout */
+@import "theme/layout";
+/* 4.5 Animation */
+@import "theme/animation";
+
+#app{
+    font-family: 'Nunito', sans-serif;
+}
+.rldis{
+    background-color: #ffffff !important;
+}
+.rldis:hover {
+    font-weight: 900;
+    // background-color: #39af21;
+    background-color: #e6ffd5 !important;
+  }
+
+// .ddmenu{
+//     font-weight: 900;
+//     color: #39af21 !important;
+//   }
+
+.router-link-exact-active {
+    // border-radius: 3px;
+    margin: auto;
+    // width: 95% !important;
+    // border: #ffffff;
+    font-weight: 900;
+    border-right: 7px solid #39af21 !important;
+    // background-color: #39af21 !important;
+    color: #39af21 !important;
+
+  }
+
+.router-link-exact-active:hover {
+    // border-radius: 3px;
+    margin: auto;
+    // width: 95% !important;
+    // border: #ffffff;
+    font-weight: 900;
+    background-color: #e6ffd5 !important;
+    color: #39af21 !important;
+}
+
+.router-link-exact-active:active {
+    font-weight: 900;
+    // background-color: #39af21;
+    border-right: 7px solid #39af21 !important;
+}
+
+.nav-link:hover {
+    font-weight: 900;
+    color: #39af21;
+}
+
+.section .section-title:before {
+    content: " ";
+    border-radius: 5px;
+    height: 8px;
+    width: 30px;
+    background-color: #39af21 !important;
+    display: inline-block;
+    float: left;
+    margin-top: 6px;
+    margin-right: 15px;
+}
+
+.section .section-header{
+    margin-bottom: 20px !important;
+}
+
+.card{
+    margin-bottom: 20px !important;
+}
+.card .card-statistic-2{
+    margin-bottom: 0px !important;
+}
+
+.rounded-circle{
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+}
+.section-tools {
+    font-size: 15px;
+    color: color(dark);
+    font-weight: 600;
+    position: relative;
+    margin: 15px 0 15px 0;
+  }
+
+.form-control-sm {
+    background-color: #fdfffd;
+    border-color: #66ce51;
+}
+
+.vt-sort:before{
+    font-family: 'Font Awesome 5 Free';
+    padding-right: 0.5em;
+    width: 1.28571429em;
+    display: inline-block;
+    text-align: center;
+}
+
+.vt-sortable:before{
+    content: "\f0dc";
+}
+
+.vt-asc:before{
+    content: "\f884";
+}
+
+.vt-desc:before{
+    content: "\f160";
+}
+
+.v-selectpage .sp-input-container .sp-input{
+    font-size: 14px !important;
+    padding: 10px 15px !important;
+    border-color: #66ce51 !important;
+    height: 42px !important;
+}
+
+
+// .main-wrapper-1 {
+//     .section {
+//       .section-header {
+//         margin-left: -30px;
+//         margin-right: -30px;
+//         margin-top: -10px;
+//         border-radius: 0;
+//         border-top: 1px solid #f9f9f9;
+//         padding-left: 35px;
+//         padding-right: 35px;
+//       }
+//     }
+//   }
+.main-wrapper-1 {
+    .kotak {
+        .nempel {
+            position: -webkit-sticky !important;
+            position: sticky !important;
+            top: 5px !important;
+            z-index: 3 !important;
+        }
+    }
+}
+
+.selection{
+    border : 1px solid #66ce51 !important;
+
+    .text{
+    color: #495057 !important;
+    }
+    .menu{
+        border: 1px solid #66ce51 !important;
+    }
+}
+
+html {
+    overflow-y: hidden; /* Hide scrollbars */
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.dropdown-menu-center {
+    right: auto;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
