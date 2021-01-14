@@ -77,7 +77,7 @@
                     </form>
 
                     <div class="text-center mt-3 mb-3 text-small">
-                    Copyright &copy; IT - RSUD Cibinong, {{ date('Y') }}
+                    Copyright &copy; IT System Development, {{ date('Y') }}
                     {{-- <div class="mt-2">
                         <a href="#">Privacy Policy</a>
                         <div class="bullet"></div>
