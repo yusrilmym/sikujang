@@ -8,7 +8,7 @@
   <meta name="csrf-token" content="{{ csrf_token() }}">
   {{-- <title>Login &mdash; {{ env('APP_NAME') }}</title> --}}
   <link rel="icon" type="image/png" href='{{ asset('img/favicon.png') }}'>
-  <title>Login &mdash; SiKujang</title>
+  <title>Login &mdash; SiCepot</title>
   <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
 
